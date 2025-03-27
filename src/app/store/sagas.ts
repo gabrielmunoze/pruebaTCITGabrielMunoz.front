@@ -34,8 +34,8 @@ async function addPostApi(action: PayloadAction<Post>): Promise<Post> {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ 
-        "post_name": action.payload.nombre, 
-        "post_desc": action.payload.descripcion
+        "nombre": action.payload.nombre, 
+        "descripcion": action.payload.descripcion
       })
     });
   
